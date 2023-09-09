@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multi-Page Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="survey.css">
+    <script src="survey.js"></script>
+    
+</head>
+<body>
+    <form id="surveyForm" action="end.html" method="post">
+        <div class="page" id="page1">
+            <h1>Person's Loyalty  Test</h1>
+            <label for="name"><b>1. Your Name</b></label>
+            <input type="text" id="name" name="name">
+            
+            <label for="gender"><b>2. Your Gender</b></label>
+            <input type="text" id="gender" name="gender">
+        
+            <label for="age"><b>3. Your Age</b></label>
+            <input type="number" id="age" name="age">
+            
+            <label for="phone_number"><b>4. Your Mobile` Number</b></label>
+            <input type="number" id="phone_number" name="phone_number">
+            
+            <button type="button" id="nextButton1">Next</button>
+        </div>
+
+        <div class="page" id="page2">
+                <label><b>5. Does the person knows you</b><br> <br>
+                    <input type="radio" name="knowfriend" value="Yes" id="yesOption">
+                    <label for="yesOption">Yes</label>
+                    <input type="radio" name="knowfriend" value="No" id="noOption">
+                    <label for="noOption">No</label>
+                </label>
+
+            <label><b>6. Person qualities:</b><br> <br>
+                <input type="checkbox" id="quality1" name="quality1" value="Trustworthy">
+                <label for="quality1">Trustworthy</label><br>
+                <input type="checkbox" id="quality2" name="quality2" value="Loyal">
+                <label for="quality2">Loyal</label><br>
+                <input type="checkbox" id="quality3" name="quality3" value="Honest">
+                <label for="quality3">Honest</label><br>
+                <input type="checkbox" id="quality4" name="quality4" value="Humor">
+                <label for="quality4">Humor</label><br>
+                <input type="checkbox" id="quality5" name="quality5" value="Caring">
+                <label for="quality5">Caring</label><br>
+                <input type="checkbox" id="quality6" name="quality6" value="Respect">
+                <label for="quality6">Respect</label><br>
+            </label>
+
+            <label for="where"><b>7. Where did you meet that person ?</b></label>
+            <input type="text" id="where" name="where">
+
+            <button type="button" id="prevButton2">Previous</button>
+            <button type="button" id="nextButton2">Next</button>
+        </div>
+
+        <div class="page" id="page3">
+            <label><b>8. What would the person like(choose one from each line) the most?</b></label><br>
+                <input type="radio" name="q1" value="fly">To fly &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="q1" value="invisible">Be invisible<br><br><br>
+                <input type="radio" name="q2" value="past">Go back to past &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="q2" value="future">Go to future<br><br><br>
+                <input type="radio" name="q3" value="food">Favorite food &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="q3" value="dessert">Favorite dessert<br><br><br>
+                <input type="radio" name="q4" value="read">Power to read minds &nbsp;&nbsp;
+                <input type="radio" name="q4" value="teleport">Power to teleport<br><br><br>
+                <input type="radio" name="q5" value="beach">Beach &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="q5" value="mountains">Mountain<br><br><br>
+
+            <div>
+                <label><b>9. Describe about your family:</b>
+                <textarea id="describe" name="describe"></textarea></label>
+                  <br><br><br><br>
+                <div class="thank-you-container">
+                    <h1 class="thank-you-heading">Thank You!</h1>
+                    <p class="thank-you-message">We appreciate your support.</p>
+                    
+                  </div>
+            </div>
+
+            <div class="buttons">
+                
+                <button type="submit" id="submitButton">Submit</button>
+
+                
+            </div>
+        </div>
+
+        
+    </form>
+    
+</body>
+</html>
